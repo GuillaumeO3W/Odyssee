@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- CDN icons Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">   <!-- CDN icons Boostrap -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Odyssée & Collusion</title>
 </head>
@@ -13,7 +13,7 @@
 
 <!-- DEBUT HEADER ------------------------------------------------------------------------------------------------ -->
 <?php
-include 'header.php';
+include_once 'header.php';
 ?>
 <!-- FIN HEADER ------------------------------------------------------------------------------------------------ -->
 
@@ -32,6 +32,8 @@ include 'header.php';
                 </div>
             </nav>
 
+<!-- --------------DEBUT TABLEAU UTILISATEURS---------------------------------------------- -->
+
             <table class="table table-striped table-light rounded overflow-hidden">
                 <thead>
                 <tr>
@@ -48,7 +50,8 @@ include 'header.php';
                 <!-- La "base de donné" des utilisateurs est simulée par un tableau PHP qui se trouve dans listUsers.php -->
                     <?php
                     include 'listUsers.php';
-                    
+                    // source pour la pagination :
+                    // https://antoine-herault.developpez.com/tutoriels/php/pagination-automatique-en-php/
                         foreach ($users as $key => $profil){
                                 echo "<tr>
                                     <th scope=\"row\">".($key+1)."</th>

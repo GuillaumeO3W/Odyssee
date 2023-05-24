@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- CDN icons Boostrap -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Odyssée & Collusion</title>
 </head>
 <body class="bg-body-secondary">
 
 <!-- DEBUT HEADER ------------------------------------------------------------------------------------------------ -->
 <?php
-include 'header.php';
+include_once 'header.php';
 ?>
 <!-- FIN HEADER ------------------------------------------------------------------------------------------------ -->
 
+<!-- --------------------------FORMULAIRE DE CONNECTION------------------------------------------------------------ -->
+<!-- source : https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/913196-implementez-un-systeme-de-connexion -->
+
 <!-- DEBUT SECTION CARDS---------------------------------------------------------------------------------------- -->
     <section class="container mb-5">
-        <h2 class="fs-5 fw-medium text-body-secondary mb-4"><i class="bi bi-grid-1x2-fill"></i> Dashboard</h2>
+        <h2 class="fs-5 fw-medium text-body-secondary mb-4"><i class="bi bi-table"></i></i> Dashboard</h2>
         <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100 bg-body-tertiary">

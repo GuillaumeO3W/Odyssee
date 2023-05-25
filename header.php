@@ -2,7 +2,7 @@
 // On recupere l'URL de la page pour ensuite affecter class = "active" aux liens de nav
 // source : https://openclassrooms.com/forum/sujet/bootstrap-utilisation-de-class-active
 $page = $_SERVER['REQUEST_URI'];
-$page = str_replace("/guillaume/Odyssee/", "",$page);
+$page = str_replace("/guillaume_php/odyssee/", "",$page);
 ?>
 
 <header class="d-flex shadow-sm align-items-center bg-body-tertiary mb-5">

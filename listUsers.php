@@ -295,32 +295,42 @@ $users = [
         'status'=>'modérateur'
     ],
     [
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'lastname'=>'M\'Bappe',
+        'name'=>'Kylian',
+        'pseudo'=>'kyky07',
+        'email'=>'K.mbappe@gmail.com',
+        'status'=>'joueur'
     ],
     [
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'lastname'=>'Sissi',
+        'name'=>'Princesse',
+        'pseudo'=>'Sissi_du_93',
+        'email'=>'P.sissi@gmail.com',
+        'status'=>'joueur'
     ],
     [
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'lastname'=>'Sawyer',
+        'name'=>'Tom',
+        'pseudo'=>'tomtom',
+        'email'=>'tSawyer@gmail.com',
+        'status'=>'joueur'
     ],
     [
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'lastname'=>'Coffee',
+        'name'=>'john',
+        'pseudo'=>'cofcof',
+        'email'=>'j.coffee@gmail.com',
+        'status'=>'joueur'
     ],
 ];
+
+$totalUsers=count($users);    // On compte le nombre d'utilisateurs total
+
+// On compte le nombre d'admin, de modérateur et de joueurs . source : https://stackoverflow.com/a/53308963
+$totalAdmin = array_count_values(array_column($users, 'status'))['administrateur'];
+$totalMod = array_count_values(array_column($users, 'status'))['modérateur'];
+$totalGamer = array_count_values(array_column($users, 'status'))['joueur'];
+    
+
+
 ?>

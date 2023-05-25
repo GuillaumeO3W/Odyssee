@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- CDN icons Boostrap -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Odyssée & Collusion</title>
+    <title>Odyssée</title>
 </head>
 <body class="bg-body-secondary">
 
 <!-- DEBUT HEADER ------------------------------------------------------------------------------------------------ -->
 <?php
 include_once 'header.php';
+include_once 'listUsers.php';
 ?>
 <!-- FIN HEADER ------------------------------------------------------------------------------------------------ -->
 
@@ -27,10 +28,10 @@ include_once 'header.php';
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100 bg-body-tertiary">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Utilisateurs</h5>
-                        <p class="card-text mb-1">Nb Admins</p>
-                        <p class="card-text mb-1">Nb Modérateurs</p>
-                        <p class="card-text">Nb Joueurs</p>
+                        <h5 class="card-title">Utilisateurs : <?php echo $totalUsers ;?></h5>           <!--  Le total des Utilisataurs, admin, modo et joueurs                                 -->
+                        <p class="card-text mb-1">Admins : <?php echo $totalAdmin ;?></p>               <!--  est calculé en dessous du tableau d'utilisateurs dans le fichier listUsers.php    -->
+                        <p class="card-text mb-1">Modérateurs : <?php echo $totalMod ;?></p>
+                        <p class="card-text">Joueurs : <?php echo $totalGamer ;?></p>
                         <a href="#" class="btn btn-primary mt-auto me-auto">Ajouter un utilisateur</a>
                     </div>
                 </div>
@@ -63,31 +64,39 @@ include_once 'header.php';
             <h3 class="fs-6 text-body-secondary fw-medium mb-4">Derniers utilisateurs ajoutés</h3>
             <table class="table table-striped table-light rounded overflow-hidden">
                 <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Prénom</th>
-                    <th scope="col">Pseudo</th>
-                </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Pseudo</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Statut</th>
+                        <th scope="col"></th>
+                    </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
+    <?php
+        
+        $usersReverse = array_reverse($users); // On inverse le sens du tableau users
+
+        for ($i=0 ; $i<5 ; $i++){  
+            
+                echo "<tr>
+                    <th scope=\"row\">".$totalUsers."</th>". // $total est le nombres total d'utilisateurs
+                    "<td>".$usersReverse[$i]['lastname']."</td>
+                    <td>".$usersReverse[$i]['name']."</td>
+                    <td>".$usersReverse[$i]['pseudo']."</td>
+                    <td>".$usersReverse[$i]['email']."</td>
+                    <td>".$usersReverse[$i]['status']."</td>
+                    <td class=\"d-flex gap-3 justify-content-end\">
+                        <i class=\"bi bi-search\"></i>
+                        <i class=\"bi bi-pencil-fill\"></i>
+                        <i class=\"bi bi-trash3-fill\"></i>
+                    </td>";
+                echo "</tr>";
+                $totalUsers = $totalUsers-1; 
+            }
+    ?>
                 </tbody>
             </table>
         </div>

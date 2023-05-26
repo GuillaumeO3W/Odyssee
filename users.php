@@ -104,7 +104,7 @@ include_once 'header.php';
                         }    
                          else //Sinon...
                         {
-                            echo ' <a href="http://localhost/guillaume_php/odyssee/users.php?page='.$i.'">'.$i.'</a> ';
+                            echo ' <a href="http://localhost/formation_o3w/odyssee/users.php?page='.$i.'">'.$i.'</a> ';
                         }
                     }
                     echo '</p>';

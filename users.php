@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">   <!-- CDN icons Boostrap -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Odyssée & Collusion</title>
-</head>
-<body class="bg-body-secondary">
-
-<!-- DEBUT HEADER ------------------------------------------------------------------------------------------------ -->
 <?php
+$title = 'Odyssée :: Utilisateurs';
+$currentPage = 'users';
 include_once 'header.php';
+include 'listUsers.php'; // La "base de donné" des utilisateurs est simulée par un tableau PHP qui se trouve dans listUsers.php -->
 ?>
-<!-- FIN HEADER ------------------------------------------------------------------------------------------------ -->
 
 <!-- DEBUT SECTION TABLEAU ------------------------------------------------------------------------------------------------------ -->
     <section>
@@ -46,10 +34,8 @@ include_once 'header.php';
                     </tr>
                 </thead>
                 <tbody>
-                <!-- La "base de donné" des utilisateurs est simulée par un tableau PHP qui se trouve dans listUsers.php -->
+                
                 <?php
-                    include 'listUsers.php';
-
                     // source pour la pagination :
                     // https://antoine-herault.developpez.com/tutoriels/php/pagination-automatique-en-php/
 

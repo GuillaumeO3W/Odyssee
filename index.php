@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- CDN icons Boostrap -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Odyssée</title>
-</head>
-<body class="bg-body-secondary">
-
-<!-- DEBUT HEADER ------------------------------------------------------------------------------------------------ -->
 <?php
+$title = 'Odyssée :: Dashboard';
+$currentPage = 'dashboard';
+
 include_once 'header.php';
 include_once 'listUsers.php';
 ?>
-<!-- FIN HEADER ------------------------------------------------------------------------------------------------ -->
+
 
 <!-- --------------------------FORMULAIRE DE CONNECTION------------------------------------------------------------ -->
 <!-- source : https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/913196-implementez-un-systeme-de-connexion -->

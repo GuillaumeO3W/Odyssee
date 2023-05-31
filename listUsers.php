@@ -330,7 +330,4 @@ $totalUsers=count($users);    // On compte le nombre d'utilisateurs total
 $totalAdmin = array_count_values(array_column($users, 'status'))['administrateur'];
 $totalMod = array_count_values(array_column($users, 'status'))['modérateur'];
 $totalGamer = array_count_values(array_column($users, 'status'))['joueur'];
-    
-
-
 ?>

@@ -21,7 +21,7 @@ include_once 'listUsers.php';
                         <p class="card-text mb-1">Admins : <?= $totalAdmin ;?></p>               <!--  est calculé en dessous du tableau d'utilisateurs dans le fichier listUsers.php    -->
                         <p class="card-text mb-1">Modérateurs : <?= $totalMod ;?></p>
                         <p class="card-text">Joueurs : <?= $totalGamer ;?></p>
-                        <a href="#" class="btn btn-primary mt-auto me-auto">Ajouter un utilisateur</a>
+                        <a href="addUser.php" class="btn btn-primary mt-auto me-auto">Ajouter un utilisateur</a>
                     </div>
                 </div>
             </div>

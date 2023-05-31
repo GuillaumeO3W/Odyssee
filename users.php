@@ -39,7 +39,7 @@ include 'listUsers.php'; // La "base de donné" des utilisateurs est simulée pa
                     // source pour la pagination :
                     // https://antoine-herault.developpez.com/tutoriels/php/pagination-automatique-en-php/
 
-                    $messagesParPage=10; //Nous allons afficher 5 messages par page.
+                    $messagesParPage=10; //Nous allons afficher 10 utilisateurs par page.
                     $total=count($users); //On récupère le total d'utilisateurs dans le tableau $users[] pour le placer dans la variable $total.
                     
                     //Nous allons maintenant compter le nombre de pages.
@@ -59,42 +59,41 @@ include 'listUsers.php'; // La "base de donné" des utilisateurs est simulée pa
                     
                     for ($i=0 ; $i<$messagesParPage ; $i++){  
                         if($premiereEntree < $total){
-                        $retour_messages = $users[$premiereEntree];
-                            echo "<tr>
-                                <th scope=\"row\">".($premiereEntree+1)."</th>
-                                <td>".$users[$premiereEntree]['lastname']."</td>
-                                <td>".$users[$premiereEntree]['name']."</td>
-                                <td>".$users[$premiereEntree]['pseudo']."</td>
-                                <td>".$users[$premiereEntree]['email']."</td>
-                                <td>".$users[$premiereEntree]['status']."</td>
-                                <td class=\"d-flex gap-3 justify-content-end\">
-                                    <i class=\"bi bi-search\"></i>
-                                    <i class=\"bi bi-pencil-fill\"></i>
-                                    <i class=\"bi bi-trash3-fill\"></i>
-                                </td>";
-                            echo "</tr>";
-                            $premiereEntree++;
+                        $retour_messages = $users[$premiereEntree];?>
+                    <tr>
+                        <th scope="row"><?=($premiereEntree+1)?></th>
+                        <td><?=$users[$premiereEntree]['lastname']?></td>
+                        <td><?=$users[$premiereEntree]['name']?></td>
+                        <td><?=$users[$premiereEntree]['pseudo']?></td>
+                        <td><?=$users[$premiereEntree]['email']?></td>
+                        <td><?=$users[$premiereEntree]['status']?></td>
+                        <td class="d-flex gap-3 justify-content-end">
+                            <i class="bi bi-search"></i>
+                            <i class="bi bi-pencil-fill"></i>
+                            <i class="bi bi-trash3-fill"></i>
+                        </td>
+                    </tr>
+                            <?php $premiereEntree++;
                         }
                     }
                 ?>
                 </tbody>
             </table>
-            <?php
-            echo '<p align="center">Page : '; //Pour l'affichage, on centre la liste des pages
-                    for($i=1; $i<=$nombreDePages; $i++) //On fait notre boucle
-                    {
-                         //On va faire notre condition
-                         if($i==$pageActuelle) //S'il s'agit de la page actuelle...
-                        {
-                            echo ' [ '.$i.' ] '; 
-                        }    
-                         else //Sinon...
-                        {
-                            echo ' <a href="http://localhost/formation_o3w/odyssee/users.php?page='.$i.'">'.$i.'</a> ';
-                        }
-                    }
-                    echo '</p>';
-                    ?>
+            <p align="center">Page :  <!-- //Pour l'affichage, on centre la liste des pages -->
+            <?php    
+            for($i=1; $i<=$nombreDePages; $i++){ //On fait notre boucle
+                    //On va faire notre condition
+                    if($i==$pageActuelle) //S'il s'agit de la page actuelle...
+                {
+                    echo ' [ '.$i.' ] '; 
+                }    
+                    else //Sinon...
+                {
+                    ?><a href="users.php?page=<?=$i?>"><?=" ".$i?></a><?php
+                }
+            }
+            ?>
+            </p>
         </div>
     </section>
 

@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- CDN icons Boostrap -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Odyssée</title>
-</head>
-<body class="bg-body-secondary">
-
-<!-- DEBUT HEADER ------------------------------------------------------------------------------------------------ -->
 <?php
+$title = 'Odyssée :: Dashboard';
+$currentPage = 'dashboard';
+
 include_once 'header.php';
 include_once 'listUsers.php';
 ?>
-<!-- FIN HEADER ------------------------------------------------------------------------------------------------ -->
+
 
 <!-- --------------------------FORMULAIRE DE CONNECTION------------------------------------------------------------ -->
 <!-- source : https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/913196-implementez-un-systeme-de-connexion -->
@@ -28,10 +17,10 @@ include_once 'listUsers.php';
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100 bg-body-tertiary">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Utilisateurs : <?php echo $totalUsers ;?></h5>           <!--  Le total des Utilisataurs, admin, modo et joueurs                                 -->
-                        <p class="card-text mb-1">Admins : <?php echo $totalAdmin ;?></p>               <!--  est calculé en dessous du tableau d'utilisateurs dans le fichier listUsers.php    -->
-                        <p class="card-text mb-1">Modérateurs : <?php echo $totalMod ;?></p>
-                        <p class="card-text">Joueurs : <?php echo $totalGamer ;?></p>
+                        <h5 class="card-title">Utilisateurs : <?= $totalUsers ;?></h5>           <!--  Le total des Utilisataurs, admin, modo et joueurs                                 -->
+                        <p class="card-text mb-1">Admins : <?= $totalAdmin ;?></p>               <!--  est calculé en dessous du tableau d'utilisateurs dans le fichier listUsers.php    -->
+                        <p class="card-text mb-1">Modérateurs : <?= $totalMod ;?></p>
+                        <p class="card-text">Joueurs : <?= $totalGamer ;?></p>
                         <a href="#" class="btn btn-primary mt-auto me-auto">Ajouter un utilisateur</a>
                     </div>
                 </div>
@@ -75,33 +64,28 @@ include_once 'listUsers.php';
                     </tr>
                 </thead>
                 <tbody>
-    <?php
-        
-        $usersReverse = array_reverse($users); // On inverse le sens du tableau users
-
-        for ($i=0 ; $i<5 ; $i++){  
-            
-                echo "<tr>
-                    <th scope=\"row\">".$totalUsers."</th>". // $total est le nombres total d'utilisateurs
-                    "<td>".$usersReverse[$i]['lastname']."</td>
-                    <td>".$usersReverse[$i]['name']."</td>
-                    <td>".$usersReverse[$i]['pseudo']."</td>
-                    <td>".$usersReverse[$i]['email']."</td>
-                    <td>".$usersReverse[$i]['status']."</td>
-                    <td class=\"d-flex gap-3 justify-content-end\">
-                        <i class=\"bi bi-search\"></i>
-                        <i class=\"bi bi-pencil-fill\"></i>
-                        <i class=\"bi bi-trash3-fill\"></i>
-                    </td>";
-                echo "</tr>";
-                $totalUsers = $totalUsers-1; 
-            }
-    ?>
+                <?php
+                $usersReverse = array_reverse($users); // On inverse le sens du tableau users
+                for ($i=0 ; $i<5 ; $i++){  ?>
+                    <tr>
+                        <th scope="row"><?=$totalUsers?></th>  <!-- $total est le nombres total d'utilisateurs -->
+                        <td><?=$usersReverse[$i]['lastname']?></td>
+                        <td><?=$usersReverse[$i]['name']?></td>
+                        <td><?=$usersReverse[$i]['pseudo']?></td>
+                        <td><?=$usersReverse[$i]['email']?></td>
+                        <td><?=$usersReverse[$i]['status']?></td>
+                        <td class="d-flex gap-3 justify-content-end">
+                            <i class="bi bi-search"></i>
+                            <i class="bi bi-pencil-fill"></i>
+                            <i class="bi bi-trash3-fill"></i>
+                        </td>
+                    </tr>
+                    <?php $totalUsers = $totalUsers-1; 
+                } ?>
                 </tbody>
             </table>
         </div>
     </section>
-
 
 <!-- FIN SECTION TABLEAU ------------------------------------------------------------------------------------------------------ -->
 

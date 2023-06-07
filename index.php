@@ -1,6 +1,6 @@
 <?php
 $title = 'Odyssée :: Dashboard';
-$currentPage = 'dashboard';
+$currentPage = 'dashboard';          // test branche Guillaume
 
 include_once 'header.php';
 include_once 'listUsers.php';

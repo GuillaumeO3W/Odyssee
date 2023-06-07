@@ -1,7 +1,7 @@
 <?php
 $title = 'Odyssée :: Plateaux';
 $currentPage = 'gameboards';
-include_once 'header.php';
+require 'header.php';
 ?>
 
 <!-- DEBUT SECTION CARDS---------------------------------------------------------------------------------------- -->

@@ -1,8 +1,8 @@
 <?php
 $title = 'Odyssée :: Dashboard';
 $currentPage = 'dashboard';          // test branche Guillaume
-include_once 'header.php';
-include_once 'listUsers.php';
+require 'header.php';
+require 'listUsers.php';
 ?>
 
 
@@ -67,7 +67,7 @@ include_once 'listUsers.php';
                 $usersReverse = array_reverse($users); // On inverse le sens du tableau users
                 for ($i=0 ; $i<5 ; $i++){  ?>
                     <tr>
-                        <th scope="row"><?=$totalUsers?></th>  <!-- $total est le nombres total d'utilisateurs -->
+                        <th scope="row"><?=$totalUsers?></th>  <!-- $totalUsers est le nombres total d'utilisateurs -->
                         <td><?=$usersReverse[$i]['lastname']?></td>
                         <td><?=$usersReverse[$i]['name']?></td>
                         <td><?=$usersReverse[$i]['pseudo']?></td>

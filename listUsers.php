@@ -1,6 +1,7 @@
 <?php
 $users = [
     [
+        'id'=>'1',
         'lastname'=>'1Ladmin',
         'name'=>'Jean',
         'pseudo'=>'jeanjean',
@@ -8,6 +9,7 @@ $users = [
         'status'=>'administrateur'
     ],
     [
+        'id'=>'2',
         'lastname'=>'2Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -15,6 +17,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'3',
         'lastname'=>'3Legameur',
         'name'=>'Aristide',
         'pseudo'=>'GG34',
@@ -22,6 +25,7 @@ $users = [
         'status'=>'joueur'
     ],
     [
+        'id'=>'4',
         'lastname'=>'4Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -29,6 +33,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'5',
         'lastname'=>'5Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -36,6 +41,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'6',
         'lastname'=>'6Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -43,6 +49,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'7',
         'lastname'=>'7Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -50,6 +57,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'8',
         'lastname'=>'8Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -57,6 +65,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'9',
         'lastname'=>'9Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -64,6 +73,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'10',
         'lastname'=>'10Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -71,6 +81,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'11',
         'lastname'=>'11Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -78,6 +89,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'12',
         'lastname'=>'12Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -85,6 +97,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'13',
         'lastname'=>'13Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -92,6 +105,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'14',
         'lastname'=>'14Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -99,6 +113,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'15',
         'lastname'=>'15Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -106,6 +121,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'16',
         'lastname'=>'16Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -113,6 +129,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'17',
         'lastname'=>'17Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -120,6 +137,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'18',
         'lastname'=>'18Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -127,6 +145,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'19',
         'lastname'=>'19Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -134,6 +153,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'20',
         'lastname'=>'20Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -141,6 +161,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'21',
         'lastname'=>'21Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -148,6 +169,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'22',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -155,6 +177,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'23',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -162,6 +185,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'24',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -169,6 +193,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'25',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -176,6 +201,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'26',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -183,6 +209,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'27',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -190,6 +217,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'28',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -197,6 +225,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'29',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -204,6 +233,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'30',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -211,6 +241,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'31',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -218,6 +249,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'32',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -225,6 +257,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'33',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -232,6 +265,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'34',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -239,6 +273,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'35',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -246,6 +281,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'36',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -253,6 +289,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'37',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -260,6 +297,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'38',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -267,6 +305,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'39',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -274,6 +313,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'40',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -281,6 +321,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'41',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -288,6 +329,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'42',
         'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
@@ -295,6 +337,7 @@ $users = [
         'status'=>'modérateur'
     ],
     [
+        'id'=>'43',
         'lastname'=>'M\'Bappe',
         'name'=>'Kylian',
         'pseudo'=>'kyky07',
@@ -302,6 +345,7 @@ $users = [
         'status'=>'joueur'
     ],
     [
+        'id'=>'44',
         'lastname'=>'Sissi',
         'name'=>'Princesse',
         'pseudo'=>'Sissi_du_93',
@@ -309,6 +353,7 @@ $users = [
         'status'=>'joueur'
     ],
     [
+        'id'=>'45',
         'lastname'=>'Sawyer',
         'name'=>'Tom',
         'pseudo'=>'tomtom',
@@ -316,6 +361,7 @@ $users = [
         'status'=>'joueur'
     ],
     [
+        'id'=>'46',
         'lastname'=>'Coffee',
         'name'=>'john',
         'pseudo'=>'cofcof',

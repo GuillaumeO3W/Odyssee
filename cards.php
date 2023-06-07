@@ -1,7 +1,7 @@
 <?php
 $title = 'Odyssée :: Cartes';
 $currentPage = 'cards';
-include_once 'header.php';
+require 'header.php';
 ?>
 
 <!-- DEBUT SECTION CONTENT---------------------------------------------------------------------------------------- -->

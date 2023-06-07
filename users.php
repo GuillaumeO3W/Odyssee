@@ -1,11 +1,10 @@
 <?php
 $title = 'Odyssée :: Utilisateurs';
 $currentPage = 'users';
-include_once 'header.php';
-include 'listUsers.php'; // La "base de donné" des utilisateurs est simulée par un tableau PHP qui se trouve dans listUsers.php -->
+require 'header.php';
+require 'listUsers.php'; // La "base de donné" des utilisateurs est simulée par un tableau PHP qui se trouve dans listUsers.php -->
 ?>
 
-<!-- DEBUT SECTION TABLEAU ------------------------------------------------------------------------------------------------------ -->
     <section>
         <div class="container">
             <h2 class="fs-5 fw-medium text-body-secondary mb-4"><i class="bi bi-people-fill"></i> Utilisateurs</h2>
@@ -18,9 +17,25 @@ include 'listUsers.php'; // La "base de donné" des utilisateurs est simulée pa
                     </form>
                 </div>
             </nav>
+                
+<?php
+            if (isset($_GET['usersByPage'])){         // si $_GET['usersByPage'] existe on le stock dans la variable $usersByPage 
+                $usersByPage = $_GET['usersByPage'];        
+            }else{
+                $usersPerPage=15;     // sinon on définit le nombre d'utilisateurs à afficher par page
+            }
+            $totalUsers=count($users);     //On récupère le total d'utilisateurs dans le tableau $users[] pour le placer dans la variable $totalUsers.                 
+            $totalPages=ceil($totalUsers/$usersPerPage);     //Nous allons maintenant compter le nombre de pages.
+            if (isset($_GET['page']) && !empty($_GET['page'])){
+                $currentPage = $_GET['page'];      // si la var Page existe et n'est pas vide, on récupère sa valeur
+            }else{
+                $currentPage = 1;               // sinon on la défini à 1
+            }
+            $index = ($currentPage-1)*$usersPerPage;      // On définit un index pour savoir quel user afficher en premier en fonction de la page où l'on se trouve
+            $userSlice = array_slice($users,$index,$usersPerPage); // On récupère juste les utilisateurs à afficher en fonction de l'index (donc de la page actuelle) et du nombres d'utilisateur à afficher
 
-<!-- --------------DEBUT TABLEAU UTILISATEURS---------------------------------------------- -->
-
+?>
+<!-- --------------DEBUT TABLEAU UTILISATEURS--------------------- -->
             <table class="table table-striped table-light rounded overflow-hidden">
                 <thead>
                     <tr>
@@ -34,70 +49,46 @@ include 'listUsers.php'; // La "base de donné" des utilisateurs est simulée pa
                     </tr>
                 </thead>
                 <tbody>
-                
-                <?php
-                    // source pour la pagination :
-                    // https://antoine-herault.developpez.com/tutoriels/php/pagination-automatique-en-php/
-
-                    $messagesParPage=10; //Nous allons afficher 10 utilisateurs par page.
-                    $total=count($users); //On récupère le total d'utilisateurs dans le tableau $users[] pour le placer dans la variable $total.
-                    
-                    //Nous allons maintenant compter le nombre de pages.
-                    $nombreDePages=ceil($total/$messagesParPage);
-                    if(isset($_GET['page'])) // Si la variable $_GET['page'] existe...
-                    {
-                        $pageActuelle=intval($_GET['page']);
-                        if($pageActuelle>$nombreDePages){ // Si la valeur de $pageActuelle (le numéro de la page) est plus grande que $nombreDePages...
-                            $pageActuelle=$nombreDePages;
-                        }
-                    }
-                    else{
-                        $pageActuelle=1; // La page actuelle est la n°1    
-                    }
-                    
-                    $premiereEntree=($pageActuelle-1)*$messagesParPage; // On calcule la première entrée à lire
-                    
-                    for ($i=0 ; $i<$messagesParPage ; $i++){  
-                        if($premiereEntree < $total){
-                        $retour_messages = $users[$premiereEntree];?>
+                <?php 
+                foreach ($userSlice as $value):
+                ?>
                     <tr>
-                        <th scope="row"><?=($premiereEntree+1)?></th>
-                        <td><?=$users[$premiereEntree]['lastname']?></td>
-                        <td><?=$users[$premiereEntree]['name']?></td>
-                        <td><?=$users[$premiereEntree]['pseudo']?></td>
-                        <td><?=$users[$premiereEntree]['email']?></td>
-                        <td><?=$users[$premiereEntree]['status']?></td>
+                        <th scope="row"><?=$value['id']?></th>
+                        <td><?=$value['lastname']?></td>
+                        <td><?=$value['name']?></td>
+                        <td><?=$value['pseudo']?></td>
+                        <td><?=$value['email']?></td>
+                        <td><?=$value['status']?></td>
                         <td class="d-flex gap-3 justify-content-end">
                             <i class="bi bi-search"></i>
                             <i class="bi bi-pencil-fill"></i>
                             <i class="bi bi-trash3-fill"></i>
                         </td>
                     </tr>
-                            <?php $premiereEntree++;
-                        }
-                    }
+                <?php           
+                endforeach ;  
                 ?>
                 </tbody>
             </table>
-            <p align="center">Page :  <!-- //Pour l'affichage, on centre la liste des pages -->
-            <?php    
-            for($i=1; $i<=$nombreDePages; $i++){ //On fait notre boucle
-                    //On va faire notre condition
-                    if($i==$pageActuelle) //S'il s'agit de la page actuelle...
-                {
-                    echo ' [ '.$i.' ] '; 
-                }    
-                    else //Sinon...
-                {
-                    ?><a href="users.php?page=<?=$i?>"><?=" ".$i?></a><?php
-                }
-            }
-            ?>
-            </p>
+            
+            <nav aria-label="..." class="container">  <!-- Barre de navigation des pages -->
+                <ul class="pagination justify-content-center">
+                    <li class="page-item <?= ($currentPage == 1) ? "disabled" : "" ?>">
+                        <a class="page-link" href="users.php?page=<?=($currentPage-1)?> ">Previous</a>
+                    </li>
+                    <?php for ($i=1;$i<=$totalPages;$i++):?>
+                    <li class="page-item">
+                        <a class="page-link <?= ($i == $currentPage) ? "active" : "" ?> "  href="users.php?page=<?=$i?>"><?=$i?></a>
+                    </li>
+                    <?php endfor; ?>
+                    <li class="page-item <?= ($currentPage == $totalPages) ? "disabled" : "" ?>">
+                        <a class="page-link" href="users.php?page=<?=($currentPage+1)?>">Next</a>
+                    </li>
+                </ul>
+            </nav>
+            
         </div>
     </section>
-
-<!-- FIN SECTION TABLEAU ------------------------------------------------------------------------------------------------------ -->
 
 </body>
 </html>

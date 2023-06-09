@@ -60,7 +60,7 @@ require 'listUsers.php'; // La "base de donné" des utilisateurs est simulée pa
                         <td><?=$value['email']?></td>
                         <td><?=$value['status']?></td>
                         <td class="d-flex gap-3 justify-content-end">
-                            <i class="bi bi-search"></i>
+                        <a href="user_profil.php?id=<?=$value['id']?>"><i class="bi bi-search"></i></a>
                             <i class="bi bi-pencil-fill"></i>
                             <i class="bi bi-trash3-fill"></i>
                         </td>

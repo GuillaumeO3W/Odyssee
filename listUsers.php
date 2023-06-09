@@ -2,7 +2,7 @@
 $users = [
     [
         'id'=>'1',
-        'lastname'=>'1Ladmin',
+        'lastname'=>'Ladmin',
         'name'=>'Jean',
         'pseudo'=>'jeanjean',
         'email'=>'jladmin@gmail.com',
@@ -10,7 +10,7 @@ $users = [
     ],
     [
         'id'=>'2',
-        'lastname'=>'2Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -18,7 +18,7 @@ $users = [
     ],
     [
         'id'=>'3',
-        'lastname'=>'3Legameur',
+        'lastname'=>'Legameur',
         'name'=>'Aristide',
         'pseudo'=>'GG34',
         'email'=>'Aristid.goat@gmail.com',
@@ -26,7 +26,7 @@ $users = [
     ],
     [
         'id'=>'4',
-        'lastname'=>'4Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -34,7 +34,7 @@ $users = [
     ],
     [
         'id'=>'5',
-        'lastname'=>'5Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -42,7 +42,7 @@ $users = [
     ],
     [
         'id'=>'6',
-        'lastname'=>'6Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -50,7 +50,7 @@ $users = [
     ],
     [
         'id'=>'7',
-        'lastname'=>'7Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -58,7 +58,7 @@ $users = [
     ],
     [
         'id'=>'8',
-        'lastname'=>'8Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -66,7 +66,7 @@ $users = [
     ],
     [
         'id'=>'9',
-        'lastname'=>'9Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -74,7 +74,7 @@ $users = [
     ],
     [
         'id'=>'10',
-        'lastname'=>'10Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -82,7 +82,7 @@ $users = [
     ],
     [
         'id'=>'11',
-        'lastname'=>'11Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -90,7 +90,7 @@ $users = [
     ],
     [
         'id'=>'12',
-        'lastname'=>'12Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -98,7 +98,7 @@ $users = [
     ],
     [
         'id'=>'13',
-        'lastname'=>'13Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -106,7 +106,7 @@ $users = [
     ],
     [
         'id'=>'14',
-        'lastname'=>'14Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -114,7 +114,7 @@ $users = [
     ],
     [
         'id'=>'15',
-        'lastname'=>'15Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -122,7 +122,7 @@ $users = [
     ],
     [
         'id'=>'16',
-        'lastname'=>'16Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -130,7 +130,7 @@ $users = [
     ],
     [
         'id'=>'17',
-        'lastname'=>'17Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -138,7 +138,7 @@ $users = [
     ],
     [
         'id'=>'18',
-        'lastname'=>'18Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -146,7 +146,7 @@ $users = [
     ],
     [
         'id'=>'19',
-        'lastname'=>'19Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -154,7 +154,7 @@ $users = [
     ],
     [
         'id'=>'20',
-        'lastname'=>'20Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -162,7 +162,7 @@ $users = [
     ],
     [
         'id'=>'21',
-        'lastname'=>'21Lemodo',
+        'lastname'=>'Lemodo',
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
@@ -362,6 +362,14 @@ $users = [
     ],
     [
         'id'=>'46',
+        'lastname'=>'Coffee',
+        'name'=>'john',
+        'pseudo'=>'cofcof',
+        'email'=>'j.coffee@gmail.com',
+        'status'=>'joueur'
+    ],
+    [
+        'id'=>'47',
         'lastname'=>'Coffee',
         'name'=>'john',
         'pseudo'=>'cofcof',

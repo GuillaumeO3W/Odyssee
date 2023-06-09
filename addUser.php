@@ -14,35 +14,35 @@ require 'header.php';
                                 <div class="row mb-3">
                                     <div class="col ">
                                         <label for="civility" class="form-label">Civilité</label>
-                                        <input type="text" class="form-control mb-3" id="civility">
+                                        <input type="text" class="form-control mb-3 bg-light" id="civility">
                                         
                                         <label for="name" class="form-label">Prénom</label>
-                                        
-                                        <input type="text" class="form-control mb-3" id="name">
+                                        <input type="text" class="form-control mb-3 bg-light" id="name">
+
                                         <label for="firstName" class="form-label">Nom</label>
-                                        <input type="text" class="form-control mb-3" id="firstName">
+                                        <input type="text" class="form-control mb-3 bg-light" id="firstName">
                                         
                                         <label for="numberStreet" class="form-label">N° de rue</label>
-                                        <input type="text" class="form-control mb-3" id="streetNumber">
+                                        <input type="text" class="form-control mb-3 bg-light" id="streetNumber">
                                         
                                         <label for="streetName" class="form-label">Nom de rue</label>
-                                        <input type="text" class="form-control mb-3" id="streetName">
+                                        <input type="text" class="form-control mb-3 bg-light" id="streetName">
                                     </div>
                                     <div class="col ">
                                         <label for="pseudo" class="form-label">Pseudo</label>
-                                        <input type="text" class="form-control mb-3" id="pseudo">
+                                        <input type="text" class="form-control mb-3 bg-light" id="pseudo">
                                         
                                         <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control mb-3" id="email">
-                                        
+                                        <input type="email" class="form-control mb-3 bg-light" id="email">
+
                                         <label for="pwd" class="form-label">Mot de passe</label>
-                                        <input type="text" class="form-control mb-3" id="pwd">
+                                        <input type="text" class="form-control mb-3 bg-light" id="pwd">
                                         
                                         <label for="postcode" class="form-label">Code postal</label>
-                                        <input type="text" class="form-control mb-3" id="postcode">
+                                        <input type="text" class="form-control mb-3 bg-light" id="postcode">
                                         
                                         <label for="city" class="form-label">Ville</label>
-                                        <input type="text" class="form-control mb-3" id="city">
+                                        <input type="text" class="form-control mb-3 bg-light" id="city">
                                     </div> 
                                 </div>
                                 <div class="text-center">

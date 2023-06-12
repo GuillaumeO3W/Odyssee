@@ -8,7 +8,7 @@ require 'header.php';
         <div class="col-8 col-sm-11 col-md-9 col-lg-8 col-xl-7 col-xxl-6  mx-auto">
             <div class="card">
                 <h5 class="card-header"><i class="bi bi-people-fill"></i> Ajout d'un Utilisateur</h5>
-                <div class="card-body p-4">
+                <div class="card-body p-4 ">
                     <form>
                         <div class="row mb-3">
                             <div class="col-12 col-sm-6 d-flex flex-column gap-3 mb-3">
@@ -45,7 +45,7 @@ require 'header.php';
                         </div>
                         <div class="row">
                             <div class="text-center">
-                                <button type="submit" class="btn btn-secondary ">Enregistrer l'utilisateur</button>
+                                <button type="submit" class="btn btn-outline-primary">Enregistrer l'utilisateur</button>
                             </div>
                         </div>
                     </form>

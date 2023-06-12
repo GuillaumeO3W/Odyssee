@@ -20,7 +20,7 @@ require 'listUsers.php';
                         <p class="card-text mb-1">Admins : <?= $totalAdmin ;?></p>               <!--  est calculé en dessous du tableau d'utilisateurs dans le fichier listUsers.php    -->
                         <p class="card-text mb-1">Modérateurs : <?= $totalMod ;?></p>
                         <p class="card-text">Joueurs : <?= $totalGamer ;?></p>
-                        <a href="addUser.php" class="btn btn-primary mt-auto me-auto">Ajouter un utilisateur</a>
+                        <a href="addUser.php" class="btn btn-outline-primary mt-auto me-auto">Ajouter un utilisateur</a>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@ require 'listUsers.php';
                         <h5 class="card-title">Cartes</h5>
                         <p class="card-text mb-1">Nb de cartes "Vikings"</p>
                         <p class="card-text">Nb de cartes "Explorateurs"</p>
-                        <a href="#" class="btn btn-primary mt-auto me-auto">Ajouter une carte</a>
+                        <a href="#" class="btn btn-outline-primary mt-auto me-auto">Ajouter une carte</a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ require 'listUsers.php';
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Plateaux</h5>
                         <p class="card-text">Nb de plateaux</p>
-                        <a href="#" class="btn btn-primary mt-auto me-auto">Ajouter un plateau</a>
+                        <a href="#" class="btn btn-outline-primary mt-auto me-auto">Ajouter un plateau</a>
                     </div>
                 </div>
             </div>

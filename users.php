@@ -10,7 +10,7 @@ require 'listUsers.php'; // La "base de donné" des utilisateurs est simulée pa
             <h2 class="fs-5 fw-medium text-body-secondary mb-4"><i class="bi bi-people-fill"></i> Utilisateurs</h2>
             <nav class="navbar bg-body-secondary mb-4">
                 <div class="container-fluid">
-                    <a href="addUser.php" class="btn btn-primary">Ajouter un Utilisateur</a>
+                    <a href="addUser.php" class="btn btn-outline-primary">Ajouter un Utilisateur</a>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>

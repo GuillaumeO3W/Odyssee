@@ -20,6 +20,8 @@ require 'header.php';
                                 <input type="text" class="form-control bg-light" name="name" placeholder="Prénom">
                                 <input type="text" class="form-control bg-light" name="firstName" placeholder="Nom">
                                 <input type="email" class="form-control bg-light" name="email" placeholder="Email">
+                                <input type="date" class="form-control bg-light"  name="birth" required>
+
                             </div>
                             <div class="col d-flex flex-column gap-3">
                                 <input type="number" class="form-control bg-light" name="streetNumber" placeholder="N° de rue">

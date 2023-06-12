@@ -3,57 +3,56 @@ $title = 'Odyssée :: Ajout Utilisateur';
 $currentPage = 'addUsers';
 require 'header.php';
 ?>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <h5 class="card-header"><i class="bi bi-people-fill"></i> Ajout d'un Utilisateur</h5>
-                        <div class="card-body">
-                            <form>
-                                <div class="row mb-3">
-                                    <div class="col ">
-                                        <label for="civility" class="form-label">Civilité</label>
-                                        <input type="text" class="form-control mb-3 bg-light" id="civility">
-                                        
-                                        <label for="name" class="form-label">Prénom</label>
-                                        <input type="text" class="form-control mb-3 bg-light" id="name">
 
-                                        <label for="firstName" class="form-label">Nom</label>
-                                        <input type="text" class="form-control mb-3 bg-light" id="firstName">
-                                        
-                                        <label for="numberStreet" class="form-label">N° de rue</label>
-                                        <input type="text" class="form-control mb-3 bg-light" id="streetNumber">
-                                        
-                                        <label for="streetName" class="form-label">Nom de rue</label>
-                                        <input type="text" class="form-control mb-3 bg-light" id="streetName">
-                                    </div>
-                                    <div class="col ">
-                                        <label for="pseudo" class="form-label">Pseudo</label>
-                                        <input type="text" class="form-control mb-3 bg-light" id="pseudo">
-                                        
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control mb-3 bg-light" id="email">
-
-                                        <label for="pwd" class="form-label">Mot de passe</label>
-                                        <input type="text" class="form-control mb-3 bg-light" id="pwd">
-                                        
-                                        <label for="postcode" class="form-label">Code postal</label>
-                                        <input type="text" class="form-control mb-3 bg-light" id="postcode">
-                                        
-                                        <label for="city" class="form-label">Ville</label>
-                                        <input type="text" class="form-control mb-3 bg-light" id="city">
-                                    </div> 
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-secondary ">Enregistrer l'utilisateur</button>
-                                </div>
-                            </form>
+<div class="container">
+        <div class="col-8 col-sm-11 col-md-9 col-lg-8 col-xl-7 col-xxl-6  mx-auto">
+            <div class="card">
+                <h5 class="card-header"><i class="bi bi-people-fill"></i> Ajout d'un Utilisateur</h5>
+                <div class="card-body p-4">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-12 col-sm-6 d-flex flex-column gap-3 mb-3">
+                                <select class="form-select bg-light" name="civility" id="">
+                                    <option selected>Civilité</option>
+                                    <option value="Mme">Madame</option>
+                                    <option value="M">Monsieur</option>
+                                </select>
+                                <input type="text" class="form-control bg-light" name="name" placeholder="Prénom">
+                                <input type="text" class="form-control bg-light" name="firstName" placeholder="Nom">
+                                <input type="email" class="form-control bg-light" name="email" placeholder="Email">
+                            </div>
+                            <div class="col d-flex flex-column gap-3">
+                                <input type="text" class="form-control bg-light" name="streetNumber" placeholder="N° de rue">
+                                <input type="text" class="form-control bg-light" name="streetName" placeholder="Nom de rue">
+                                <input type="text" class="form-control bg-light" name="postcode" placeholder="Code postal">
+                                <input type="text" class="form-control bg-light" name="city" placeholder="Ville">
+                            </div>
                         </div>
-                    </div>
+                        <div class="row mb-3">
+                            <div class="col-12 col-sm-6 d-flex flex-column gap-3 mb-3">
+                                <input type="text" class="form-control bg-light" name="pseudo" placeholder="Pseudo">
+                                <select class="form-select bg-light" name="status" id="">
+                                    <option selected>Statut</option>
+                                    <option value="admin">Administrateur</option>
+                                    <option value="modo">Modérateur</option>
+                                    <option value="gamer">Joueur</option>
+                                    <option value="caster">Casteur</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control mb-3 bg-light" name="pwd" placeholder="Mot de passe">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-secondary ">Enregistrer l'utilisateur</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+</div>
+
 </body>
 </html>

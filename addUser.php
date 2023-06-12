@@ -22,9 +22,9 @@ require 'header.php';
                                 <input type="email" class="form-control bg-light" name="email" placeholder="Email">
                             </div>
                             <div class="col d-flex flex-column gap-3">
-                                <input type="text" class="form-control bg-light" name="streetNumber" placeholder="N° de rue">
+                                <input type="number" class="form-control bg-light" name="streetNumber" placeholder="N° de rue">
                                 <input type="text" class="form-control bg-light" name="streetName" placeholder="Nom de rue">
-                                <input type="text" class="form-control bg-light" name="postcode" placeholder="Code postal">
+                                <input type="number" class="form-control bg-light" name="postcode" placeholder="Code postal">
                                 <input type="text" class="form-control bg-light" name="city" placeholder="Ville">
                             </div>
                         </div>

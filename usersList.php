@@ -2,7 +2,7 @@
 $title = 'Odyssée :: Utilisateurs';
 $currentPage = 'users';
 require 'header.php';
-require 'usersBdd.php';
+require 'usersDb.php';
 ?>
 
     <section>
@@ -10,15 +10,17 @@ require 'usersBdd.php';
             <h2 class="fs-5 fw-medium text-body-secondary mb-4"><i class="bi bi-people-fill"></i> Utilisateurs</h2>
             <nav class="navbar  mb-4">
                 <div class="container-fluid">
-                    <a href="userAdd.php" class="btn btn-outline-primary">Ajouter un Utilisateur</a>
+                    <a href="userAdd.php" class="btn btn-primary">Ajouter un Utilisateur</a>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-info" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="userSearch">
+                        <button class="btn btn-primary" type="submit">Search</button>
                     </form>
                 </div>
             </nav>
                 
 <?php
+            // Afficher un nombre définit d'utilisateur par page 
+
             if (isset($_GET['usersByPage'])){         // si $_GET['usersByPage'] existe on le stock dans la variable $usersByPage 
                 $usersByPage = $_GET['usersByPage'];        
             }else{
@@ -32,10 +34,26 @@ require 'usersBdd.php';
                 $currentPage = 1;               // sinon on la défini à 1
             }
             $index = ($currentPage-1)*$usersPerPage;      // On définit un index pour savoir quel user afficher en premier en fonction de la page où l'on se trouve
-            $userSlice = array_slice($users,$index,$usersPerPage); // On récupère juste les utilisateurs à afficher en fonction de l'index (donc de la page actuelle) et du nombres d'utilisateur à afficher
+            $usersOnPage = array_slice($users,$index,$usersPerPage); // On récupère juste les utilisateurs à afficher en fonction de l'index (donc de la page actuelle) et du nombres d'utilisateur à afficher
+
+
+
+            // recherche utilisateur dans le tableau
+            
+            $userSearch = isset($_GET['userSearch']) ? $_GET['userSearch'] : '';
+            foreach($users as $user){
+                if(strtolower($user['name']) == strtolower($userSearch) || $user['id'] == $userSearch || strtolower($user['lastname']) == strtolower($userSearch)  ){
+                    $usersDisplay[] = $user;  
+                }
+            }
+
+            // Si une recherche existe on affiche les utlilisateurs correspondant sinon on les affiches tous
+
+            $showUsers = isset($_GET['userSearch']) ? $usersDisplay : $usersOnPage; 
 
 ?>
-<!-- --------------DEBUT TABLEAU UTILISATEURS--------------------- -->
+            <!-- Affichage des utilisateurs dans un tableau -->
+
             <table class="table table-striped table-light rounded overflow-hidden">
                 <thead>
                     <tr>
@@ -50,7 +68,7 @@ require 'usersBdd.php';
                 </thead>
                 <tbody>
                 <?php 
-                foreach ($userSlice as $value):
+                foreach ($showUsers as $value):
                 ?>
                     <tr>
                         <th scope="row"><?=$value['id']?></th>
@@ -71,7 +89,8 @@ require 'usersBdd.php';
                 </tbody>
             </table>
             
-            <nav aria-label="..." class="container">  <!-- Barre de navigation des pages -->
+            <!-- Barre de navigation des pages -->
+            <nav aria-label="..." class="container">  
                 <ul class="pagination justify-content-center">
                     <li class="page-item <?= ($currentPage == 1) ? "disabled" : "" ?>">
                         <a class="page-link" href="usersList.php?page=<?=($currentPage-1)?> ">Previous</a>

@@ -2,7 +2,7 @@
 $title = 'Odyssée :: Dashboard';
 $currentPage = 'dashboard';          
 require 'header.php';
-require 'usersBdd.php';
+require 'usersDb.php';
 ?>
 
 
@@ -11,10 +11,10 @@ require 'usersBdd.php';
 
 <!-- DEBUT SECTION CARDS---------------------------------------------------------------------------------------- -->
     <section class="container mb-5">
-        <h2 class="fs-5 fw-medium text-body-secondary mb-4"><i class="bi bi-table"></i></i> Dashboard</h2>
+        <h2 class="fs-5 fw-medium mb-4"><i class="bi bi-table"></i></i> Dashboard</h2>
         <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 bg-body-tertiary">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Utilisateurs : <?= $totalUsers ;?></h5>           <!--  Le total des Utilisataurs, admin, modo et joueurs                                 -->
                         <p class="card-text mb-1">Admins : <?= $totalAdmin ;?></p>               <!--  est calculé en dessous du tableau d'utilisateurs dans le fichier listUsers.php    -->
@@ -25,7 +25,7 @@ require 'usersBdd.php';
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 bg-body-tertiary">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Cartes</h5>
                         <p class="card-text mb-1">Nb de cartes "Vikings"</p>
@@ -35,7 +35,7 @@ require 'usersBdd.php';
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 bg-body-tertiary">
+                <div class="card h-100 bg-body-tertiary shadow-sm">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Plateaux</h5>
                         <p class="card-text">Nb de plateaux</p>
@@ -49,8 +49,8 @@ require 'usersBdd.php';
 <!-- DEBUT SECTION TABLEAU ------------------------------------------------------------------------------------------------------ -->
     <section>
         <div class="container">
-            <h3 class="fs-6 text-body-secondary fw-medium mb-4">Derniers utilisateurs ajoutés</h3>
-            <table class="table table-striped table-light rounded overflow-hidden">
+            <h3 class="fs-6 fw-medium mb-4">Derniers utilisateurs ajoutés</h3>
+            <table class="table table-striped table-light rounded overflow-hidden shadow-sm">
                 <thead>
                     <tr>
                         <th scope="col">#</th>

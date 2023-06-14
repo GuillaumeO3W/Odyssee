@@ -2,18 +2,18 @@
 $title = 'Odyssée :: Utilisateurs';
 $currentPage = 'users';
 require 'header.php';
-require 'listUsers.php'; // La "base de donné" des utilisateurs est simulée par un tableau PHP qui se trouve dans listUsers.php -->
+require 'usersBdd.php';
 ?>
 
     <section>
         <div class="container">
             <h2 class="fs-5 fw-medium text-body-secondary mb-4"><i class="bi bi-people-fill"></i> Utilisateurs</h2>
-            <nav class="navbar bg-body-secondary mb-4">
+            <nav class="navbar  mb-4">
                 <div class="container-fluid">
-                    <a href="addUser.php" class="btn btn-outline-primary">Ajouter un Utilisateur</a>
+                    <a href="userAdd.php" class="btn btn-outline-primary">Ajouter un Utilisateur</a>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-info" type="submit">Search</button>
                     </form>
                 </div>
             </nav>
@@ -22,7 +22,7 @@ require 'listUsers.php'; // La "base de donné" des utilisateurs est simulée pa
             if (isset($_GET['usersByPage'])){         // si $_GET['usersByPage'] existe on le stock dans la variable $usersByPage 
                 $usersByPage = $_GET['usersByPage'];        
             }else{
-                $usersPerPage=15;     // sinon on définit le nombre d'utilisateurs à afficher par page
+                $usersPerPage=12;     // sinon on définit le nombre d'utilisateurs à afficher par page
             }
             $totalUsers=count($users);     //On récupère le total d'utilisateurs dans le tableau $users[] pour le placer dans la variable $totalUsers.                 
             $totalPages=ceil($totalUsers/$usersPerPage);     //Nous allons maintenant compter le nombre de pages.
@@ -60,7 +60,7 @@ require 'listUsers.php'; // La "base de donné" des utilisateurs est simulée pa
                         <td><?=$value['email']?></td>
                         <td><?=$value['status']?></td>
                         <td class="d-flex gap-3 justify-content-end">
-                        <a href="user_profil.php?id=<?=$value['id']?>"><i class="bi bi-search"></i></a>
+                        <a href="userProfil.php?id=<?=$value['id']?>"><i class="bi bi-search"></i></a>
                             <i class="bi bi-pencil-fill"></i>
                             <i class="bi bi-trash3-fill"></i>
                         </td>
@@ -74,15 +74,15 @@ require 'listUsers.php'; // La "base de donné" des utilisateurs est simulée pa
             <nav aria-label="..." class="container">  <!-- Barre de navigation des pages -->
                 <ul class="pagination justify-content-center">
                     <li class="page-item <?= ($currentPage == 1) ? "disabled" : "" ?>">
-                        <a class="page-link" href="users.php?page=<?=($currentPage-1)?> ">Previous</a>
+                        <a class="page-link" href="usersList.php?page=<?=($currentPage-1)?> ">Previous</a>
                     </li>
                     <?php for ($i=1;$i<=$totalPages;$i++):?>
                     <li class="page-item">
-                        <a class="page-link <?= ($i == $currentPage) ? "active" : "" ?> "  href="users.php?page=<?=$i?>"><?=$i?></a>
+                        <a class="page-link <?= ($i == $currentPage) ? "active" : "" ?> "  href="usersList.php?page=<?=$i?>"><?=$i?></a>
                     </li>
                     <?php endfor; ?>
                     <li class="page-item <?= ($currentPage == $totalPages) ? "disabled" : "" ?>">
-                        <a class="page-link" href="users.php?page=<?=($currentPage+1)?>">Next</a>
+                        <a class="page-link" href="usersList.php?page=<?=($currentPage+1)?>">Next</a>
                     </li>
                 </ul>
             </nav>

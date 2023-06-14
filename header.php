@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     
 </head>
-<body class="bg-body-secondary">
+<body>
+<!-- class="bg-body-secondary" -->
 
 <header class="d-flex shadow-sm align-items-center bg-body-tertiary mb-5">
     <a href="index.html">
@@ -22,10 +23,10 @@
                 <a class="nav-link <?= $currentPage === 'dashboard' ? 'active' : '' ?>"  href="index.php">Dashboard</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link <?= $currentPage === 'users' ? 'active' : '' ?>"  href="users.php">Utilisateurs</a>
+                <a class="nav-link <?= $currentPage === 'users' ? 'active' : '' ?>"  href="usersList.php">Utilisateurs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link <?= $currentPage === 'cards' ? 'active' : '' ?>"  href="cards.php">Cartes</a>
+                <a class="nav-link <?= $currentPage === 'cards' ? 'active' : '' ?>"  href="cardsList.php">Cartes</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link <?= $currentPage === 'gameboards' ? 'active' : '' ?>"  href="gameboards.php">Plateaux</a>

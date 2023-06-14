@@ -1,8 +1,8 @@
 <?php
 $title = 'Odyssée :: Dashboard';
-$currentPage = 'dashboard';          // test branche Guillaume
+$currentPage = 'dashboard';          
 require 'header.php';
-require 'listUsers.php';
+require 'usersBdd.php';
 ?>
 
 
@@ -20,7 +20,7 @@ require 'listUsers.php';
                         <p class="card-text mb-1">Admins : <?= $totalAdmin ;?></p>               <!--  est calculé en dessous du tableau d'utilisateurs dans le fichier listUsers.php    -->
                         <p class="card-text mb-1">Modérateurs : <?= $totalMod ;?></p>
                         <p class="card-text">Joueurs : <?= $totalGamer ;?></p>
-                        <a href="addUser.php" class="btn btn-outline-primary mt-auto me-auto">Ajouter un utilisateur</a>
+                        <a href="userAdd.php" class="btn btn-outline-primary mt-auto me-auto">Ajouter un utilisateur</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@ require 'listUsers.php';
                         <td><?=$usersReverse[$i]['email']?></td>
                         <td><?=$usersReverse[$i]['status']?></td>
                         <td class="d-flex gap-3 justify-content-end">
-                        <a href="user_profil.php?id=<?=$usersReverse[$i]['id']?>"><i class="bi bi-search"></i></a>
+                        <a href="userProfil.php?id=<?=$usersReverse[$i]['id']?>"><i class="bi bi-search"></i></a>
                             <i class="bi bi-pencil-fill"></i>
                             <i class="bi bi-trash3-fill"></i>
                         </td>

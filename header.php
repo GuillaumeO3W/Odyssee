@@ -14,7 +14,7 @@
 <!-- class="bg-body-secondary" -->
 
 <header class="d-flex shadow-sm align-items-center bg-body-tertiary mb-5">
-    <a href="index.html">
+    <a href="index.php">
         <img src="assets/img/logo.png" alt="Logo Odyssée Collusion" class="logo ms-3">
     </a>
     <nav class="navbar navbar-expand-sm ms-auto me-auto">

@@ -7,7 +7,7 @@ require 'usersDb.php';
 
     <section>
         <div class="container">
-            <h2 class="fs-5 fw-medium text-body-secondary mb-4"><i class="bi bi-people-fill"></i> Utilisateurs</h2>
+            <h2 class="fs-5 fw-medium mb-4"><i class="bi bi-people-fill"></i> Utilisateurs</h2>
             <nav class="navbar  mb-4">
                 <div class="container-fluid">
                     <a href="userAdd.php" class="btn btn-primary">Ajouter un Utilisateur</a>
@@ -54,7 +54,7 @@ require 'usersDb.php';
 ?>
             <!-- Affichage des utilisateurs dans un tableau -->
 
-            <table class="table table-striped table-light rounded overflow-hidden">
+            <table class="table table-striped table-light rounded overflow-hidden shadow-sm">
                 <thead>
                     <tr>
                         <th scope="col">#</th>

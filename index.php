@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 $title = 'Odyssée :: Dashboard';
 $currentPage = 'dashboard';          
 require 'inc/head.php';

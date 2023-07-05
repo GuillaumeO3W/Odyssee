@@ -1,14 +1,9 @@
 <?php
 $title = 'Odyssée :: Profil Utilisateur';
 $currentPage = 'userProfil';
-<<<<<<< HEAD
 require 'inc/head.php';
-require 'inc/nav.php';
+require 'inc/navbar.php';
 require 'inc/usersDb.php';
-=======
-require 'header.php';
-require 'usersDb.php'; 
->>>>>>> 7da42a8c13f268a1866db269096418ee73e41cbf
 ?>
 
 <?php

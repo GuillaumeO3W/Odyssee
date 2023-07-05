@@ -14,5 +14,3 @@ session_start();
     
 </head>
 <body>
-<!-- class="bg-body-secondary" -->
-

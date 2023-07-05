@@ -8,7 +8,6 @@ if(isset($_GET['logout'])){
     exit;
 }
 
-
 ?>
 <header class="d-flex shadow-sm align-items-center bg-body-tertiary mb-5">
     <a href="index.html">

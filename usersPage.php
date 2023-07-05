@@ -87,15 +87,15 @@ require 'inc/usersDb.php';
             <nav aria-label="..." class="container">  
                 <ul class="pagination justify-content-center">
                     <li class="page-item <?= ($currentPage == 1) ? "disabled" : "" ?>">
-                        <a class="page-link" href="usersList.php?page=<?=($currentPage-1)?> ">Previous</a>
+                        <a class="page-link" href="usersPage.php?page=<?=($currentPage-1)?> ">Previous</a>
                     </li>
                     <?php for ($i=1;$i<=$totalPages;$i++):?>
                     <li class="page-item">
-                        <a class="page-link <?= ($i == $currentPage) ? "active" : "" ?> "  href="usersList.php?page=<?=$i?>"><?=$i?></a>
+                        <a class="page-link <?= ($i == $currentPage) ? "active" : "" ?> "  href="usersPage.php?page=<?=$i?>"><?=$i?></a>
                     </li>
                     <?php endfor; ?>
                     <li class="page-item <?= ($currentPage == $totalPages) ? "disabled" : "" ?>">
-                        <a class="page-link" href="usersList.php?page=<?=($currentPage+1)?>">Next</a>
+                        <a class="page-link" href="usersPage.php?page=<?=($currentPage+1)?>">Next</a>
                     </li>
                 </ul>
             </nav>

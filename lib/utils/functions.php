@@ -14,7 +14,7 @@ function userExist($users, $searchedUser){
 }
 
 function isNotConnected(){
-    if(!isset($_SESSION['cem']['connected'])){
+    if(!isset($_SESSION['odyssee']['connected'])){
         header('Location: login.html');
         exit;
     }

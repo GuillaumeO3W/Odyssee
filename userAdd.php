@@ -2,7 +2,7 @@
 $title = 'Odyssée :: Ajout Utilisateur';
 $currentPage = 'addUsers';
 require 'inc/head.php';
-require 'inc/nav.php';
+require 'inc/navbar.php';
 
 ?>
 

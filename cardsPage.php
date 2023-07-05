@@ -1,7 +1,9 @@
 <?php
 $title = 'Odyssée :: Cartes';
-$currentPage = 'cards';
-require 'header.php';
+$currentPage = 'cardsPage';
+require 'inc/head.php';
+require 'inc/navbar.php';
+require 'inc/usersDb.php';
 ?>
 
 <!-- DEBUT SECTION CONTENT---------------------------------------------------------------------------------------- -->

@@ -1,8 +1,9 @@
 <?php
 $title = 'Odyssée :: Profil Utilisateur';
 $currentPage = 'userProfil';
-require 'header.php';
-require 'listUsers.php'; // La "base de donné" des utilisateurs est simulée par un tableau PHP qui se trouve dans listUsers.php -->
+require 'inc/head.php';
+require 'inc/nav.php';
+require 'inc/usersDb.php';
 ?>
 
 <?php

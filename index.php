@@ -1,13 +1,11 @@
 <?php
+session_start();
 $title = 'Odyssée :: Dashboard';
 $currentPage = 'dashboard';          
-require 'header.php';
-require 'usersDb.php';
+require 'inc/head.php';
+require 'inc/navbar.php';
+require 'inc/usersDb.php';
 ?>
-
-
-<!-- --------------------------FORMULAIRE DE CONNECTION------------------------------------------------------------ -->
-<!-- source : https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/913196-implementez-un-systeme-de-connexion -->
 
 <!-- DEBUT SECTION CARDS---------------------------------------------------------------------------------------- -->
     <section class="container mb-5">

@@ -6,7 +6,8 @@ $users = [
         'name'=>'Jean',
         'pseudo'=>'jeanjean',
         'email'=>'jladmin@gmail.com',
-        'status'=>'administrateur'
+        'status'=>'administrateur',
+        'pwd'=>'1'
     ],
     [
         'id'=>'2',
@@ -14,7 +15,9 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'2'
+        
     ],
     [
         'id'=>'3',
@@ -22,7 +25,8 @@ $users = [
         'name'=>'Aristide',
         'pseudo'=>'GG34',
         'email'=>'Aristid.goat@gmail.com',
-        'status'=>'joueur'
+        'status'=>'joueur',
+        'pwd'=>'3'
     ],
     [
         'id'=>'4',
@@ -30,7 +34,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'4'
     ],
     [
         'id'=>'5',
@@ -38,7 +43,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'5'
     ],
     [
         'id'=>'6',
@@ -46,7 +52,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'6'
     ],
     [
         'id'=>'7',
@@ -54,7 +61,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'7'
     ],
     [
         'id'=>'8',
@@ -62,7 +70,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'8'
     ],
     [
         'id'=>'9',
@@ -70,7 +79,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'9'
     ],
     [
         'id'=>'10',
@@ -78,7 +88,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'10'
     ],
     [
         'id'=>'11',
@@ -86,7 +97,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'11'
     ],
     [
         'id'=>'12',
@@ -94,7 +106,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'12'
     ],
     [
         'id'=>'13',
@@ -102,7 +115,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'13'
     ],
     [
         'id'=>'14',
@@ -110,7 +124,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'14'
     ],
     [
         'id'=>'15',
@@ -118,7 +133,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'15'
     ],
     [
         'id'=>'16',
@@ -126,7 +142,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'16'
     ],
     [
         'id'=>'17',
@@ -134,7 +151,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'17'
     ],
     [
         'id'=>'18',
@@ -142,7 +160,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'18'
     ],
     [
         'id'=>'19',
@@ -150,7 +169,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'19'
     ],
     [
         'id'=>'20',
@@ -158,7 +178,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'20'
     ],
     [
         'id'=>'21',
@@ -166,7 +187,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'21'
     ],
     [
         'id'=>'22',
@@ -174,7 +196,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'22'
     ],
     [
         'id'=>'23',
@@ -182,7 +205,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'23'
     ],
     [
         'id'=>'24',
@@ -190,7 +214,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'24'
     ],
     [
         'id'=>'25',
@@ -198,7 +223,8 @@ $users = [
         'name'=>'Luc',
         'pseudo'=>'lulu',
         'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
+        'status'=>'modérateur',
+        'pwd'=>'25'
     ],
     [
         'id'=>'26',
@@ -210,171 +236,48 @@ $users = [
     ],
     [
         'id'=>'27',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'28',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'29',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'30',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'31',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'32',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'33',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'34',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'35',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'36',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'37',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'38',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'39',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'40',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'41',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'42',
-        'lastname'=>'Lemodo',
-        'name'=>'Luc',
-        'pseudo'=>'lulu',
-        'email'=>'luc.lemodo@gmail.com',
-        'status'=>'modérateur'
-    ],
-    [
-        'id'=>'43',
         'lastname'=>'M\'Bappe',
         'name'=>'Kylian',
         'pseudo'=>'kyky07',
         'email'=>'K.mbappe@gmail.com',
-        'status'=>'joueur'
+        'status'=>'joueur',
+        'pwd'=>'27'
     ],
     [
-        'id'=>'44',
+        'id'=>'28',
         'lastname'=>'Sissi',
         'name'=>'Princesse',
         'pseudo'=>'Sissi_du_93',
         'email'=>'P.sissi@gmail.com',
-        'status'=>'joueur'
+        'status'=>'joueur',
+        'pwd'=>'28'
     ],
     [
-        'id'=>'45',
+        'id'=>'29',
         'lastname'=>'Sawyer',
         'name'=>'Tom',
         'pseudo'=>'tomtom',
         'email'=>'tSawyer@gmail.com',
-        'status'=>'joueur'
+        'status'=>'joueur',
+        'pwd'=>'29'
     ],
     [
-        'id'=>'46',
+        'id'=>'30',
         'lastname'=>'Coffee',
         'name'=>'john',
         'pseudo'=>'cofcof',
         'email'=>'j.coffee@gmail.com',
-        'status'=>'joueur'
+        'status'=>'joueur',
+        'pwd'=>'30'
     ],
     [
-        'id'=>'47',
+        'id'=>'31',
         'lastname'=>'Coffee',
         'name'=>'john',
         'pseudo'=>'cofcof',
         'email'=>'j.coffee@gmail.com',
-        'status'=>'joueur'
+        'status'=>'joueur',
+        'pwd'=>'31'
     ],
 ];
 

@@ -1,8 +1,9 @@
 <?php
 $title = 'Odyssée :: Utilisateurs';
-$currentPage = 'users';
-require 'header.php';
-require 'usersDb.php';
+$currentPage = 'usersPage';
+require 'inc/head.php';
+require 'inc/navbar.php';
+require 'inc/usersDb.php';
 ?>
 
     <section>

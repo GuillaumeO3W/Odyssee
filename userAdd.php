@@ -1,7 +1,9 @@
 <?php
 $title = 'Odyssée :: Ajout Utilisateur';
 $currentPage = 'addUsers';
-require 'header.php';
+require 'inc/head.php';
+require 'inc/nav.php';
+
 ?>
 
 <div class="container">

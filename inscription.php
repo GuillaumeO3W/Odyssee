@@ -1,9 +1,14 @@
-<?php
-$title = 'Odyssée :: Inscription';
-require 'inc/head.php';
-require 'inc/nav.php';
-?>
-    <div class="image"> <img src="../odyssee/assets/img/logo.png"></img></div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style-interface-connexion.css">
+    <title>Connexion</title>
+</head>
+<body>
+    <div class="image"> <img src="assets/img/logo.png"></img></div>
         <div class="container">
             <div class="card">
                 <div class="title">
@@ -37,7 +42,7 @@ require 'inc/nav.php';
                                 <input type="text">
                             </div>
                             <input type="submit" name="submit" class="btn" value="Sign up">
-                            <p class="txt-center under">Vous êtes déjà inscrit ?<a href="Connexion.html">Cliquez-ici</a></p>
+                            <p class="txt-center under">Vous êtes déjà inscrit ?<a href="login.html">Cliquez-ici</a></p>
                         </form>
                     </div>
             </div>

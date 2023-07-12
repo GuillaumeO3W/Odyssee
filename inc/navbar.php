@@ -9,7 +9,7 @@ if(isset($_GET['logout'])){
 }
 
 ?>
-<header class="d-flex shadow-sm align-items-center bg-body-tertiary mb-5">
+<header class="d-flex shadow align-items-center bg-body-tertiary mb-5">
     <a href="index.php">
         <img src="assets/img/logo.png" alt="Logo Odyssée Collusion" class="logo ms-3">
     </a>

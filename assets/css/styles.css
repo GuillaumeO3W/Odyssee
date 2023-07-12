@@ -2,9 +2,10 @@ body{
     /* background: #e9ecef;
     background: linear-gradient(180deg, #cbdbd6 0%, #dcdfe1 100%);
     background-attachment: fixed; */
-    background-image: url(../img/login.svg) ; /* https://www.vecteezy.com/ */
+    background-image: url(../img/background.svg) ; /* https://www.vecteezy.com/ */
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height:100vh;
 }
 .logo{

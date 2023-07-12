@@ -8,7 +8,7 @@ require 'inc/usersDb.php';
 ?>
 
 <!-- DEBUT SECTION CARDS---------------------------------------------------------------------------------------- -->
-    <section class="container mb-5">
+    <section class="container">
         <h1 class="fs-2 fw-medium mb-4 text-light"><i class="bi bi-table"></i></i> Dashboard</h1>
         <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4">

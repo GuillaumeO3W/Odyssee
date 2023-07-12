@@ -7,7 +7,7 @@ require 'inc/usersDb.php';
 ?>
 
 <!-- DEBUT SECTION CONTENT---------------------------------------------------------------------------------------- -->
-    <section class="container mb-5">
+    <section class="container">
         <h1 class="fs-2 fw-medium  mb-4 text-light"><i class="bi bi-person-badge-fill"></i> Cartes</h1>
         <nav class="navbar mb-4">
             <div class="container-fluid">

@@ -26,13 +26,16 @@ require 'inc/usersDb.php';
             }else{
                 $usersPerPage=12;     // sinon on définit le nombre d'utilisateurs à afficher par page
             }
+            
             $totalUsers=count($users);     //On récupère le total d'utilisateurs dans le tableau $users[] pour le placer dans la variable $totalUsers.                 
             $totalPages=ceil($totalUsers/$usersPerPage);     //Nous allons maintenant compter le nombre de pages.
+            
             if (isset($_GET['page']) && !empty($_GET['page'])){
                 $currentPage = $_GET['page'];      // si la var Page existe et n'est pas vide, on récupère sa valeur
             }else{
                 $currentPage = 1;               // sinon on la défini à 1
             }
+            
             $index = ($currentPage-1)*$usersPerPage;      // On définit un index pour savoir quel user afficher en premier en fonction de la page où l'on se trouve
             $usersOnPage = array_slice($users,$index,$usersPerPage); // On récupère juste les utilisateurs à afficher en fonction de l'index (donc de la page actuelle) et du nombres d'utilisateur à afficher
 

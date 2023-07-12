@@ -28,7 +28,7 @@ require 'inc/usersDb.php';
                         <h5 class="card-title">Cartes</h5>
                         <p class="card-text mb-1">Nb de cartes "Vikings"</p>
                         <p class="card-text">Nb de cartes "Explorateurs"</p>
-                        <a href="#" class="btn btn-outline-primary mt-auto me-auto">Ajouter une carte</a>
+                        <a href="cardAdd.php" class="btn btn-outline-primary mt-auto me-auto">Ajouter une carte</a>
                     </div>
                 </div>
             </div>

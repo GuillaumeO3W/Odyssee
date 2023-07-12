@@ -11,7 +11,7 @@ require 'inc/usersDb.php';
         <h2 class="fs-5 fw-medium  mb-4"><i class="bi bi-person-badge-fill"></i> Cartes</h2>
         <nav class="navbar mb-4">
             <div class="container-fluid">
-              <a href="#" class="btn btn-primary">Ajouter une carte</a>
+              <a href="cardAdd.php" class="btn btn-primary">Ajouter une carte</a>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-primary" type="submit">Search</button>

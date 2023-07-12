@@ -9,12 +9,12 @@ require 'inc/usersDb.php';
 
 <!-- DEBUT SECTION CARDS---------------------------------------------------------------------------------------- -->
     <section class="container mb-5">
-        <h2 class="fs-5 fw-medium mb-4"><i class="bi bi-table"></i></i> Dashboard</h2>
+        <h1 class="fs-2 fw-medium mb-4 text-light"><i class="bi bi-table"></i></i> Dashboard</h1>
         <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100 bg-body-tertiary shadow-sm">
+                    <h2 class="card-header fs-3">Utilisateurs : <?= $totalUsers ;?></h2>           <!--  Le total des Utilisataurs, admin, modo et joueurs                                 -->
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Utilisateurs : <?= $totalUsers ;?></h5>           <!--  Le total des Utilisataurs, admin, modo et joueurs                                 -->
                         <p class="card-text mb-1">Admins : <?= $totalAdmin ;?></p>               <!--  est calculé en dessous du tableau d'utilisateurs dans le fichier listUsers.php    -->
                         <p class="card-text mb-1">Modérateurs : <?= $totalMod ;?></p>
                         <p class="card-text">Joueurs : <?= $totalGamer ;?></p>
@@ -24,8 +24,8 @@ require 'inc/usersDb.php';
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100 bg-body-tertiary shadow-sm">
+                    <h2 class="card-header fs-3">Cartes</h2>
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Cartes</h5>
                         <p class="card-text mb-1">Nb de cartes "Vikings"</p>
                         <p class="card-text">Nb de cartes "Explorateurs"</p>
                         <a href="cardAdd.php" class="btn btn-outline-primary mt-auto me-auto">Ajouter une carte</a>
@@ -34,8 +34,8 @@ require 'inc/usersDb.php';
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100 bg-body-tertiary shadow-sm">
+                    <h2 class="card-header fs-3">Plateaux</h2>
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Plateaux</h5>
                         <p class="card-text">Nb de plateaux</p>
                         <a href="#" class="btn btn-outline-primary mt-auto me-auto">Ajouter un plateau</a>
                     </div>
@@ -47,7 +47,7 @@ require 'inc/usersDb.php';
 <!-- DEBUT SECTION TABLEAU ------------------------------------------------------------------------------------------------------ -->
     <section>
         <div class="container">
-            <h3 class="fs-6 fw-medium mb-4">Derniers utilisateurs ajoutés</h3>
+            <h3 class=" fs-4 fw-medium mb-4 text-light">Derniers utilisateurs ajoutés</h3>
             <table class="table table-striped table-light rounded overflow-hidden shadow-sm">
                 <thead>
                     <tr>

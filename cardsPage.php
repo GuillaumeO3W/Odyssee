@@ -8,7 +8,7 @@ require 'inc/usersDb.php';
 
 <!-- DEBUT SECTION CONTENT---------------------------------------------------------------------------------------- -->
     <section class="container mb-5">
-        <h2 class="fs-5 fw-medium  mb-4"><i class="bi bi-person-badge-fill"></i> Cartes</h2>
+        <h1 class="fs-2 fw-medium  mb-4 text-light"><i class="bi bi-person-badge-fill"></i> Cartes</h1>
         <nav class="navbar mb-4">
             <div class="container-fluid">
               <a href="cardAdd.php" class="btn btn-primary">Ajouter une carte</a>
@@ -18,7 +18,7 @@ require 'inc/usersDb.php';
                 </form>
             </div>
         </nav>
-        <h3 class="fs-5  text-decoration-underline">Cartes Vikings</h3>
+        <h2 class="fs-3 text-light">Cartes Vikings</h3>
         <div class="container text-center mb-4 cardHover">
             <div class="row gallery">
             <?php
@@ -33,7 +33,7 @@ require 'inc/usersDb.php';
             endwhile ?>
             </div>
         </div>
-        <h3 class="fs-5 text-decoration-underline">Cartes Explorateurs</h3>
+        <h2 class="fs-3 text-light">Cartes Explorateurs</h3>
         <div class="container text-center cardHover">
           <div class="row gallery">
               <?php

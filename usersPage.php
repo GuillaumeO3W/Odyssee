@@ -8,7 +8,7 @@ require 'inc/usersDb.php';
 
     <section>
         <div class="container">
-            <h2 class="fs-5 fw-medium mb-4"><i class="bi bi-people-fill"></i> Utilisateurs</h2>
+            <h1 class="fs-2 fw-medium mb-4 text-light"><i class="bi bi-people-fill"></i> Utilisateurs</h1>
             <nav class="navbar  mb-4">
                 <div class="container-fluid">
                     <a href="userAdd.php" class="btn btn-primary">Ajouter un Utilisateur</a>

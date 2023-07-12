@@ -8,7 +8,7 @@ require 'inc/usersDb.php';
 
 <!-- DEBUT SECTION CARDS---------------------------------------------------------------------------------------- -->
     <section class="container mb-5">
-        <h2 class="fs-5 fw-medium mb-4"><i class="bi bi-map-fill"></i> Plateaux</h2>
+        <h1 class="fs-2 fw-medium mb-4 text-light"><i class="bi bi-map-fill"></i> Plateaux</h1>
         <nav class="navbar mb-4">
             <div class="container-fluid">
                 <a href="#" class="btn btn-primary disabled">Ajouter un plateau de jeu</a>

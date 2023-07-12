@@ -24,10 +24,23 @@ require 'inc/usersDb.php';
             if (isset($_GET['usersByPage'])){         // si $_GET['usersByPage'] existe on le stock dans la variable $usersByPage 
                 $usersByPage = $_GET['usersByPage'];        
             }else{
-                $usersPerPage=12;     // sinon on définit le nombre d'utilisateurs à afficher par page
+                $usersPerPage=8;     // sinon on définit le nombre d'utilisateurs à afficher par page
             }
             
-            $totalUsers=count($users);     //On récupère le total d'utilisateurs dans le tableau $users[] pour le placer dans la variable $totalUsers.                 
+            
+            
+              // recherche utilisateur dans le tableau
+            $userSearch = isset($_GET['userSearch']) ? $_GET['userSearch'] : '';
+            
+            foreach($users as $user){
+                if(strtolower($user['name']) == strtolower($userSearch) || $user['id'] == $userSearch || strtolower($user['lastname']) == strtolower($userSearch)  ){
+                    $usersDisplay[] = $user;  
+                }
+            }
+            
+            
+            
+            $totalUsers= isset($_GET['userSearch']) ? count($usersDisplay) : count($users);     //On récupère le total d'utilisateurs dans le tableau $users[] pour le placer dans la variable $totalUsers.                 
             $totalPages=ceil($totalUsers/$usersPerPage);     //Nous allons maintenant compter le nombre de pages.
             
             if (isset($_GET['page']) && !empty($_GET['page'])){
@@ -38,17 +51,10 @@ require 'inc/usersDb.php';
             
             $index = ($currentPage-1)*$usersPerPage;      // On définit un index pour savoir quel user afficher en premier en fonction de la page où l'on se trouve
             $usersOnPage = array_slice($users,$index,$usersPerPage); // On récupère juste les utilisateurs à afficher en fonction de l'index (donc de la page actuelle) et du nombres d'utilisateur à afficher
-
-            // recherche utilisateur dans le tableau
-            $userSearch = isset($_GET['userSearch']) ? $_GET['userSearch'] : '';
-            foreach($users as $user){
-                if(strtolower($user['name']) == strtolower($userSearch) || $user['id'] == $userSearch || strtolower($user['lastname']) == strtolower($userSearch)  ){
-                    $usersDisplay[] = $user;  
-                }
-            }
+            
             // Si une recherche existe on affiche les utlilisateurs correspondant sinon on les affiches tous
             $showUsers = isset($_GET['userSearch']) ? $usersDisplay : $usersOnPage; 
-
+            
 ?>
             <!-- Affichage des utilisateurs dans un tableau -->
             <table class="table table-striped table-light rounded overflow-hidden shadow-sm">

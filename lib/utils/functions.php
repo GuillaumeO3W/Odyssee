@@ -1,5 +1,20 @@
 <?php
 
+function isNotConnected(){
+    if(!isset($_SESSION['odyssee']['connected'])){
+        header('Location: login.php');
+        exit;
+    }
+}
+
+function logout(){
+    if(isset($_GET['logout'])){
+    unset($_SESSION['odyssee']['connected']);
+    header('Location: login.php');
+    exit;
+    }
+}
+
 function userExist($users, $searchedUser){
     foreach($users as $user){
         if($searchedUser['id'] === $user['id'] && $searchedUser['pwd'] === $user['pwd']){
@@ -9,13 +24,17 @@ function userExist($users, $searchedUser){
             exit;
         }
     }
-    header('Location: login.html');
+    header('Location: login.php?error');
     exit;
 }
 
-function isNotConnected(){
-    if(!isset($_SESSION['odyssee']['connected'])){
-        header('Location: login.html');
-        exit;
+function error(){
+    if(isset($_GET['error'])){
+        $error="erreur de connexion";
+    }else{
+        $error="";
     }
+    return $error;
 }
+
+?>

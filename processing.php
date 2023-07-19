@@ -7,7 +7,7 @@
         if(!empty($_POST['id']) && !empty($_POST['pwd'])){
             userExist($users, $_POST);
         }else{
-            header('Location: login.php');
+            header('Location: login.php?error');
             exit;
         }
     }

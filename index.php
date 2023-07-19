@@ -1,10 +1,9 @@
 <?php
-
 $title = 'Odyssée :: Dashboard';
-$currentPage = 'dashboard';          
+$currentPage = 'dashboard';   
 require 'inc/head.php';
 require 'inc/navbar.php';
-require 'inc/usersDb.php';
+require 'inc/usersDb.php';   
 ?>
 
 <!-- DEBUT SECTION CARDS---------------------------------------------------------------------------------------- -->

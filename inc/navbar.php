@@ -1,14 +1,3 @@
-<?php 
-require 'lib/utils/functions.php';
-isNotConnected();
-
-if(isset($_GET['logout'])){
-    unset($_SESSION['odyssee']['connected']);
-    header('Location: login.html');
-    exit;
-}
-
-?>
 <header class="d-flex shadow align-items-center bg-body-tertiary mb-5">
     <a href="index.php">
         <img src="assets/img/logo.png" alt="Logo Odyssée Collusion" class="logo ms-3">
